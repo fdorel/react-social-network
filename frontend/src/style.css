@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+/******** reset *********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(220, 221, 208);
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul ol {
+  margin: 1em 0;
+}
+
+/* main styling */
+body {
+  font-family: Poppins;
+}
+
+.page {
+  padding: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#header {
+  display: flex;
+  background-color: rgb(35, 157, 206);
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .title {
+  margin: 0;
+  padding: 0 2rem;
+  color: blanchedalmond;
+}
+
+#header .auth-options {
+  display: flex;
+  height: 100%;
+}
+
+#header .auth-options button {
+  background-color: rgb(23, 55, 82);
+  padding: 0 2rem;
+  color: cornsilk;
+  font-size: 1.2rem;
+}
+
+#header .auth-options button:hover {
+  background-color: rgb(27, 82, 128);
+}
+
+.welcome {
+  display: flex;
+  color: rgb(35, 157, 206);
+  align-items: center;
+  text-align: center;
+}
+
+.form label,
+.form input,
+.form textarea {
+  display: block;
+}
+.form input,
+.form textarea {
+  margin-bottom: 1.2rem;
+}
+.form label,
+.form textarea {
+  margin-bottom: 0.2rem;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #c2c2c2;
+  background-color: #f0f0f0;
+  font-size: 1.1rem;
+}
+.form input:focus {
+  border: 1px solid #50a4e9;
+  box-shadow: inset 0px 0px 5px rgba(38, 142, 228, 0.5);
+  outline: none;
+}
+.todo-button,
+.form input[type="submit"] {
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgb(67, 145, 175);
+  background-color: rgb(107, 179, 207);
+  font-size: 1.1rem;
+}
+
+.todo-list ul {
+  list-style: disc;
+  cursor: pointer;
+}
+
+.todo-list li:hover {
+  text-decoration: line-through;
+}
+
+.error-notice {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #da65ad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dd6ce0;
+}
+.error-notice button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #b36cb3;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 550px) {
+  #header .title {
+    font-size: 1.2rem;
+  }
+  #header .auth-options button {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
+}
